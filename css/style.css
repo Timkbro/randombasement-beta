@@ -112,20 +112,27 @@ a {
 .number-generator { 
     font-weight: 500;
     height: 100vh;
-    background-image: url('/img/IMG_20230302_112334_419\ \(2\).jpg');
-    background-size: 250px;
-
-
+    background: url('..//img/VectorSmartObject.jpg');
+    background-size: cover;
 }
+.number-generator::before{
+    position: relative;
+    content: url('../img/Logos1.png');
+    transform: rotate(30deg); 
+    height: 100vh;
+}
+
 .container {
+    position: absolute;
     width: 500px;
     min-height: 700px;
-    border-radius: 5px;
-    overflow: hidden;
+    border-radius: 15px;
     background-color: #fff;
+    overflow: hidden;
     box-shadow: 0 0 35px 2px rgb(190, 207, 219);
 
 }
+
 #random{
     font-size: 30px;
 
